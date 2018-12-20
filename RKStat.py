@@ -53,13 +53,14 @@ def RKLinearRegression(x,y):
     print(prederr)
     print(sqrd_prederr)
     plt.scatter(x,y)
-    plt.plot(x,sl)
-    plt.plot(x,sl2)
+    plt.plot(x,sl, label="prediction 1")
+    plt.plot(x,sl2, label="prediction 2")
+    plt.legend(loc='upper left')
     print ("Sum of squared predicted errors 1 :" ,np.sum(sl))
     print ( "Sum of squared predicted errors 2 :", np.sum(sl2))
     if np.sum(sl) < np.sum(sl2) :
-      print ( " s1 prediction is good")
+      print ( " prediction  1 is good")
     else:
-     print ( " s1 prediction is good")
+     print ( " prediction 2 is good")
     plt.xlabel("Height")
     plt.ylabel("Weight")
