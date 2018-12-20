@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def who_am_I():
- print("Ramana Kundeti")
+ print("Ramana Statistics")
  
 def RKLinearRegressionone():
     ht = np.array([63,64,66,66,69,71,71,72,73,75])
@@ -53,14 +53,14 @@ def RKLinearRegression(x,y):
     print(prederr)
     print(sqrd_prederr)
     plt.scatter(x,y)
-    plt.plot(x,sl, label="prediction 1")
-    plt.plot(x,sl2, label="prediction 2")
+    plt.plot(x,sl, label="least squares regression line 1")
+    plt.plot(x,sl2, label="least squares regression line 2")
     plt.legend(loc='upper left')
     print ("Sum of squared predicted errors 1 :" ,np.sum(sl))
     print ( "Sum of squared predicted errors 2 :", np.sum(sl2))
     if np.sum(sl) < np.sum(sl2) :
-      print ( " prediction  1 is good")
+      print ( " least squares regression line  1 is good")
     else:
-     print ( " prediction 2 is good")
+     print ( " least squares regression line  2 is good")
     plt.xlabel("Height")
     plt.ylabel("Weight")
