@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def who_am_I():
- print("Ramana Statistics")
+ print("Ramana Kundeti")
  
 def RKLinearRegressionone():
     ht = np.array([63,64,66,66,69,71,71,72,73,75])
